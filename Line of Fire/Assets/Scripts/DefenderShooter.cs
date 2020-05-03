@@ -5,9 +5,9 @@ using UnityEngine;
 public class DefenderShooter : MonoBehaviour
 {
 
-    [SerializeField] GameObject projectile;
+    [SerializeField] GameObject projectile, gun;
     public void Fire()
     {
-        Instantiate(projectile, transform.position, transform.rotation);
+        Instantiate(projectile, gun.transform.position, gun.transform.rotation);
     }
 }

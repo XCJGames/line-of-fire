@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2039906543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2039906544}
+  m_Layer: 0
+  m_Name: gun point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2039906544
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039906543}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.702, y: 0.004, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8950396561511465165}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &144232543707632632
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,8 +129,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 4698245243350803068}
   m_Bounds:
-    m_Center: {x: -0.12393425, y: -0.93943214, z: 0.006}
-    m_Extent: {x: 0.0875775, y: 0.09377015, z: 2.3283064e-10}
+    m_Center: {x: -0.23088351, y: -0.8992313, z: 0.006}
+    m_Extent: {x: 0.083624996, y: 0.07799998, z: 2.3283064e-10}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &784806623343917566
@@ -203,8 +233,8 @@ MonoBehaviour:
   - {fileID: 7845112537000661484}
   - {fileID: 7311876308407840435}
   m_Bounds:
-    m_Center: {x: -0.22352472, y: -0.90078115, z: -0.006}
-    m_Extent: {x: 0.07963419, y: 0.079634726, z: 0.002}
+    m_Center: {x: -0.23055758, y: -0.8994112, z: -0.006}
+    m_Extent: {x: 0.07697497, y: 0.07781598, z: 0.002}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &1055470347645103435
@@ -368,8 +398,8 @@ MonoBehaviour:
   - {fileID: 2258811867471892497}
   - {fileID: 83062053862527345}
   m_Bounds:
-    m_Center: {x: 0.19086197, y: -0.6955332, z: 0.01}
-    m_Extent: {x: 0.4265597, y: 0.1599527, z: 0}
+    m_Center: {x: -0.23041144, y: -0.8988893, z: 0.01}
+    m_Extent: {x: 0.15957898, y: 0.426658, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &2095323741332215871
@@ -501,8 +531,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 4168637381860113704}
   m_Bounds:
-    m_Center: {x: -0.2115143, y: -0.93210554, z: -0.007999999}
-    m_Extent: {x: 0.09028226, y: 0.08073786, z: 4.656613e-10}
+    m_Center: {x: -0.23029247, y: -0.8987654, z: -0.007999999}
+    m_Extent: {x: 0.08564201, y: 0.08053398, z: 4.656613e-10}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &2181477538211088532
@@ -635,8 +665,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 2285162859854060339}
   m_Bounds:
-    m_Center: {x: -0.20554835, y: -0.89083505, z: 0.0019999999}
-    m_Extent: {x: 0.24059662, y: 0.26931143, z: 1.1641532e-10}
+    m_Center: {x: -0.23088457, y: -0.89921254, z: 0.0019999999}
+    m_Extent: {x: 0.23964195, y: 0.26945895, z: 1.1641532e-10}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &2776561417134999421
@@ -801,8 +831,8 @@ MonoBehaviour:
   - {fileID: 854403664338667249}
   - {fileID: 2944568799135204515}
   m_Bounds:
-    m_Center: {x: -0.23003042, y: -0.8911045, z: 0}
-    m_Extent: {x: 0.2384479, y: 0.19186074, z: 0}
+    m_Center: {x: -0.23003042, y: -0.89909834, z: 0}
+    m_Extent: {x: 0.2384479, y: 0.18386704, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &5673936856021249767
@@ -847,7 +877,7 @@ GameObject:
   - component: {fileID: 1930807503}
   - component: {fileID: 1930807504}
   m_Layer: 0
-  m_Name: defender01
+  m_Name: Defender01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -873,6 +903,7 @@ Transform:
   - {fileID: 3313956928170375912}
   - {fileID: 8940177463533605960}
   - {fileID: 83062053862527345}
+  - {fileID: 2039906544}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -909,6 +940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 1176922248125466816, guid: 648c322fe6ad5a24c8cd3ffd65ac1d87,
     type: 3}
+  gun: {fileID: 2039906543}
 --- !u!1 &5989177732122829251
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,8 +1073,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 7542262829394787388}
   m_Bounds:
-    m_Center: {x: -0.22101602, y: -0.9587933, z: -0.014}
-    m_Extent: {x: 0.06955215, y: 0.080807894, z: 0}
+    m_Center: {x: -0.23069757, y: -0.8996074, z: -0.014}
+    m_Extent: {x: 0.068273, y: 0.077861995, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &6196062110181669464
@@ -1270,7 +1302,7 @@ MonoBehaviour:
   - {fileID: 9100264508196594894}
   - {fileID: 3914183192603656978}
   m_Bounds:
-    m_Center: {x: -0.23473188, y: -0.90000296, z: -0.003}
-    m_Extent: {x: 0.076284744, y: 0.07875517, z: 0.0010000002}
+    m_Center: {x: -0.23055357, y: -0.8994142, z: -0.003}
+    m_Extent: {x: 0.07697096, y: 0.077813, z: 0.0010000002}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
