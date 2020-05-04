@@ -16,10 +16,10 @@ public class Laser : MonoBehaviour
     {
         var health = other.GetComponent<Health>();
         var attacker = other.GetComponent<Attacker>();
-        GameObject impactVFXObject = Instantiate(impactVFX, transform.position, transform.rotation);
-        Destroy(impactVFXObject, 1f);
         if(attacker && health)
         {
+            GameObject impactVFXObject = Instantiate(impactVFX, transform.position, transform.rotation);
+            Destroy(impactVFXObject, 1f);
             health.DealDamage(damage);
             Destroy(gameObject);
         }
