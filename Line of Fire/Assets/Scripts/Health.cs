@@ -12,7 +12,21 @@ public class Health : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
-            Destroy(gameObject);
+            if (GetComponent<Animator>())
+            {
+                
+                GetComponent<Animator>().SetTrigger("isDead");
+                Destroy(GetComponent<BoxCollider2D>());
+            }
+            else
+            {
+                DestroySelf();
+            }
         }
+    }
+
+    public void DestroySelf()
+    {
+        Destroy(gameObject);
     }
 }

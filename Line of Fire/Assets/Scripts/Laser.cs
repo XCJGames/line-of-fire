@@ -10,6 +10,7 @@ public class Laser : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.right * Time.deltaTime * currentSpeed);
+        if (transform.position.x > 12) Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

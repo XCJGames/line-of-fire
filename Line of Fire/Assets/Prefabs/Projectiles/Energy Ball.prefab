@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3550694521291735684}
   - component: {fileID: 5270951907519954407}
   - component: {fileID: 5686134313706299251}
+  - component: {fileID: 396986144732032178}
+  - component: {fileID: 396986144732032174}
   m_Layer: 0
   m_Name: Energy Ball
   m_TagString: Untagged
@@ -102,3 +104,35 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &396986144732032178
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207333471001016844}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00037181377, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.08767593
+--- !u!114 &396986144732032174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207333471001016844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564cb4c5c7a8ee94e87922e2713c3b5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentSpeed: 3
+  damage: 35
+  impactVFX: {fileID: 5493687316001871748, guid: 6d273ad463d882a47a1f8949a631ac41,
+    type: 3}
