@@ -7,12 +7,13 @@ using TMPro;
 
 public class HealthDisplay : MonoBehaviour
 {
-    [SerializeField] int health = 5;
+    [SerializeField] float health = 5;
     TextMeshProUGUI healthText;
 
     void Start()
     {
         healthText = GetComponent<TextMeshProUGUI>();
+        health -= PlayerPrefsController.GetDifficulty();
         UpdateDisplay();
     }
 
@@ -30,7 +31,7 @@ public class HealthDisplay : MonoBehaviour
         }
         else
         {
-            FindObjectOfType<LevelLoader>().LoadLoseScene();
+            FindObjectOfType<LevelController>().LostLevel();
         }
     }
 }

@@ -37,6 +37,7 @@ public class CoinsDisplay : MonoBehaviour
         {
             coins -= amount;
             UpdateDisplay();
+            FindObjectOfType<LevelController>().AddCoinsSpent(amount);
         }
     }
 }

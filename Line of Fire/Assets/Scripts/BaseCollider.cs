@@ -9,6 +9,8 @@ public class BaseCollider : MonoBehaviour
         if (other.GetComponent<Attacker>())
         {
             FindObjectOfType<HealthDisplay>().RemoveHealth();
+            FindObjectOfType<LevelController>().AttackerEscaped();
+            Destroy(other.gameObject);
         }
     }
 }

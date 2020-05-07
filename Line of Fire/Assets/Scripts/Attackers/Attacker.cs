@@ -9,6 +9,20 @@ public class Attacker : MonoBehaviour
     GameObject currentTarget;
     Animator animator;
 
+
+    private void Awake()
+    {
+        FindObjectOfType<LevelController>().AttackerSpawned();
+    }
+
+    private void OnDestroy()
+    {
+        LevelController levelController = FindObjectOfType<LevelController>();
+        if(levelController != null)
+        {
+            levelController.AttackerDefeated();
+        }
+    }
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -45,6 +59,11 @@ public class Attacker : MonoBehaviour
         Health health = currentTarget.GetComponent<Health>();
         if (health)
         {
+            var difficulty = PlayerPrefsController.GetDifficulty();
+            if (difficulty >= 1)
+            {
+                damage *= (difficulty / 10) + 1;
+            }
             health.DealDamage(damage);
         }
     }

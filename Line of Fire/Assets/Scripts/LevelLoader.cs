@@ -24,13 +24,33 @@ public class LevelLoader : MonoBehaviour
         LoadNextScene();
     }
 
-    private void LoadNextScene()
+    public void LoadStartMenu()
+    {
+        SceneManager.LoadScene("Start Screen");
+    }
+
+    public void LoadNextScene()
     {
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
-    public void LoadLoseScene()
+    public void LoadSameScene()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(currentSceneIndex);
+    }
+
+    public void LoadOptionsMenu()
+    {
+        SceneManager.LoadScene("Options Screen");
+    }
+
+    public void LoadCreditsScene()
+    {
+        SceneManager.LoadScene("Credits Screen");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

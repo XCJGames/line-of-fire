@@ -233,8 +233,8 @@ MonoBehaviour:
   - {fileID: 7845112537000661484}
   - {fileID: 7311876308407840435}
   m_Bounds:
-    m_Center: {x: -0.23055743, y: -0.89941126, z: -0.006}
-    m_Extent: {x: 0.07697494, y: 0.07781595, z: 0.002}
+    m_Center: {x: -0.23055743, y: -0.89941144, z: -0.006}
+    m_Extent: {x: 0.07697494, y: 0.07781601, z: 0.002}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &1055470347645103435
@@ -398,7 +398,7 @@ MonoBehaviour:
   - {fileID: 2258811867471892497}
   - {fileID: 83062053862527345}
   m_Bounds:
-    m_Center: {x: -0.23041144, y: -0.8988893, z: 0.01}
+    m_Center: {x: -0.23041144, y: -0.8988894, z: 0.01}
     m_Extent: {x: 0.15957898, y: 0.426658, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -531,7 +531,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 4168637381860113704}
   m_Bounds:
-    m_Center: {x: -0.23029271, y: -0.8987653, z: -0.007999999}
+    m_Center: {x: -0.23029271, y: -0.8987652, z: -0.007999999}
     m_Extent: {x: 0.08564201, y: 0.08053398, z: 4.656613e-10}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -832,7 +832,7 @@ MonoBehaviour:
   - {fileID: 2944568799135204515}
   m_Bounds:
     m_Center: {x: -0.23003042, y: -0.8990983, z: 0}
-    m_Extent: {x: 0.2384479, y: 0.18386701, z: 0}
+    m_Extent: {x: 0.2384479, y: 0.18386698, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &5673936856021249767
@@ -970,7 +970,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0012947917, y: 0.01781106}
+  m_Offset: {x: 0, y: 0.018}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -981,7 +981,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.98388183, y: 0.985209}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &-8551682111820898179
 MonoBehaviour:
@@ -1128,7 +1128,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 7542262829394787388}
   m_Bounds:
-    m_Center: {x: -0.23069745, y: -0.8996073, z: -0.014}
+    m_Center: {x: -0.23069745, y: -0.8996072, z: -0.014}
     m_Extent: {x: 0.068273, y: 0.077861995, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1

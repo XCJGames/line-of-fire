@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 
 public class AttackerSpawner : MonoBehaviour
 {
-    bool spawn = true;
+    bool spawn = true, finishedSpawning;
     [SerializeField] float minSpawnDelay = 0f;
     [SerializeField] float maxSpawnDelay = 5f;
     [SerializeField] Attacker[] attackers;
@@ -15,9 +15,21 @@ public class AttackerSpawner : MonoBehaviour
     {
         while (spawn)
         {
+            finishedSpawning = false;
             yield return new WaitForSeconds(Random.Range(minSpawnDelay, maxSpawnDelay));
+            finishedSpawning = true;
             SpawnAttacker();
         }
+    }
+
+    public bool GetFinishedSpawning()
+    {
+        return finishedSpawning;
+    }
+
+    public void SetSpawn(bool spawn)
+    {
+        this.spawn = spawn;
     }
 
     private void SpawnAttacker()

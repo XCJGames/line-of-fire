@@ -133,6 +133,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentSpeed: 3
-  damage: 35
+  damage: 65
   impactVFX: {fileID: 5493687316001871748, guid: 6d273ad463d882a47a1f8949a631ac41,
     type: 3}
